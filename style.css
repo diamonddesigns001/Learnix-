@@ -151,4 +151,16 @@ margin-top:60px;
 
 .btn:hover{
     background:#1d4ed8;
+}/* Earning Hub */
+
+.earning-hub{
+    padding:80px 8%;
+    background:#eef4ff;
+}
+
+.earning-hub h2{
+    text-align:center;
+    font-size:42px;
+    color:#2563eb;
+    margin-bottom:15px;
 }
