@@ -1,87 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learnix - Learn Smarter. Grow Further.</title>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-  <link rel="stylesheet" href="style.css">
-</head>
+body{
+    background:#f8fafc;
+    color:#0f172a;
+    line-height:1.6;
+}
 
-<body>
+/* Header */
 
-<nav class="navbar">
-  <div class="logo">Learnix</div>
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#2563eb;
+    color:#fff;
+}
 
-  <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">AI Mentor</a></li>
-    <li><a href="#">Courses</a></li>
-    <li><a href="#">Scholarships</a></li>
-    <li><a href="#">Community</a></li>
-  </ul>
+.logo{
+    font-size:32px;
+    font-weight:bold;
+}
 
-  <a href="#" class="btn">Get Started</a>
-</nav>
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:600;
+}
 
-<section class="hero">
+/* Hero */
 
-  <div class="hero-text">
+.hero{
+    text-align:center;
+    padding:100px 8%;
+}
 
-    <h1>
-      The World's Most Trusted Student Platform
-    </h1>
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
 
-    <p>
-      Learn with AI, discover scholarships, build skills,
-      prepare for exams, and earn opportunities—all in one place.
-    </p>
+.hero p{
+    font-size:20px;
+    color:#475569;
+    max-width:700px;
+    margin:0 auto 35px;
+}
 
-    <a href="#" class="hero-btn">
-      Start Learning Free
-    </a>
+.hero-btn{
+    display:inline-block;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    padding:16px 35px;
+    border-radius:10px;
+    font-weight:bold;
+}
 
-  </div>
+.hero-btn:hover{
+    background:#1d4ed8;
+}
 
-</section>
+/* Learn Hub */
 
-<script src="script.js"></script>
+.learn-hub{
+    padding:80px 8%;
+    background:#ffffff;
+}
 
-</body>
-</html><!-- Learn Hub Section -->
-<section class="learn-hub">
-    <div class="container">
-        <h2>📚 Learn Hub</h2>
-        <p class="section-text">
-            Learn new skills, improve your knowledge, and prepare for your future with Learnix.
-        </p>
+.learn-hub h2{
+    text-align:center;
+    font-size:42px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
 
-        <div class="learn-grid">
+.section-text{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 50px;
+    color:#555;
+}
 
-            <div class="learn-card">
-                <h3>🎓 Academic Learning</h3>
-                <p>Study Mathematics, English, Biology, Chemistry, Physics, and more.</p>
-                <a href="#" class="btn">Start Learning</a>
-            </div>
+.learn-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
 
-            <div class="learn-card">
-                <h3>💻 Digital Skills</h3>
-                <p>Learn Web Development, Graphic Design, AI, Programming, and Digital Marketing.</p>
-                <a href="#" class="btn">Explore Courses</a>
-            </div>
+.learn-card{
+    background:#f8fafc;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
 
-            <div class="learn-card">
-                <h3>🤖 AI Study Mentor</h3>
-                <p>Ask AI questions, summarize notes, and create study plans.</p>
-                <a href="#" class="btn">Ask AI</a>
-            </div>
+.learn-card:hover{
+    transform:translateY(-8px);
+}
 
-            <div class="learn-card">
-                <h3>💼 Career Skills</h3>
-                <p>Learn CV writing, interview preparation, communication, and time management.</p>
-                <a href="#" class="btn">Build Your Career</a>
-            </div>
+.learn-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
 
-        </div>
-    </div>
-</section>
+.learn-card p{
+    color:#555;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#2563eb;
+    color:#fff;
+    padding:12px 24px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* Footer */
+
+footer{
+    background:#0f172a;
+    color:#fff;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
