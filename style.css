@@ -27,4 +27,18 @@ nav a{
 .hero{
     padding: 180px 8% 100px;
     text-align: center;
+}@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .logo {
+        font-size: 48px;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+    }
 }
