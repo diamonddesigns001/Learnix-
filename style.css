@@ -90,4 +90,65 @@ color:white;
 text-align:center;
 padding:30px;
 margin-top:60px;
+}/* Learn Hub */
+
+.learn-hub{
+    padding:80px 10%;
+    background:#f8fbff;
+    text-align:center;
+}
+
+.learn-hub h2{
+    font-size:2.5rem;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.section-text{
+    max-width:700px;
+    margin:auto;
+    color:#555;
+    margin-bottom:50px;
+}
+
+.learn-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.learn-card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.learn-card:hover{
+    transform:translateY(-8px);
+}
+
+.learn-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.learn-card p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 24px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
 }
