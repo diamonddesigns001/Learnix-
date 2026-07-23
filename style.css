@@ -2,112 +2,90 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#f8fafc;
-    color:#0f172a;
+    font-family:Arial,sans-serif;
+    background:#f5f7ff;
+    color:#1f2940;
     line-height:1.6;
 }
 
-/* Header */
-
 header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:#2563EB;
+    background:#2563eb;
+    color:#fff;
+    padding:20px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 8%;
-    z-index:1000;
+    flex-wrap:wrap;
 }
 
 .logo{
-    color:#fff;
-    font-size:34px;
+    font-size:32px;
     font-weight:bold;
 }
 
 nav{
     display:flex;
-    gap:25px;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 nav a{
-    color:#fff;
+    color:white;
     text-decoration:none;
-    font-size:18px;
-    font-weight:600;
-    transition:.3s;
+    font-weight:bold;
 }
-
-nav a:hover{
-    opacity:.8;
-}
-
-/* Hero */
 
 .hero{
-    padding:180px 8% 100px;
     text-align:center;
+    padding:100px 8%;
+    background:#2563eb;
+    color:white;
 }
 
 .hero h1{
-    font-size:60px;
-    line-height:1.1;
-    margin-bottom:25px;
+    font-size:52px;
+    margin-bottom:20px;
 }
 
 .hero p{
+    font-size:20px;
     max-width:700px;
-    margin:auto;
-    font-size:22px;
-    color:#475569;
-    margin-bottom:40px;
+    margin:0 auto 35px;
 }
 
-.hero-btn{
+.hero-btn,
+.btn{
     display:inline-block;
-    background:#2563EB;
-    color:#fff;
+    background:white;
+    color:#2563eb;
     text-decoration:none;
-    padding:18px 40px;
-    border-radius:12px;
-    font-size:22px;
+    padding:14px 28px;
+    border-radius:10px;
     font-weight:bold;
-    transition:.3s;
 }
-
-.hero-btn:hover{
-    background:#1d4ed8;
-    transform:translateY(-3px);
-}
-
-/* Sections */
 
 .learn-hub,
 .featured,
-.community,
-.footer{
+.community{
     padding:80px 8%;
 }
 
 .learn-hub h2,
 .featured h2,
 .community h2{
-    font-size:40px;
     text-align:center;
+    font-size:40px;
     margin-bottom:20px;
 }
 
 .section-text{
     text-align:center;
-    color:#64748b;
-    margin-bottom:50px;
+    max-width:700px;
+    margin:0 auto 50px;
+    color:#666;
 }
 
 .learn-grid{
@@ -117,7 +95,7 @@ nav a:hover{
 }
 
 .learn-card{
-    background:#fff;
+    background:white;
     padding:30px;
     border-radius:16px;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
@@ -125,7 +103,7 @@ nav a:hover{
 }
 
 .learn-card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-5px);
 }
 
 .learn-card h3{
@@ -133,31 +111,24 @@ nav a:hover{
 }
 
 .learn-card p{
-    color:#64748b;
+    color:#666;
     margin-bottom:20px;
 }
 
 .btn{
-    display:inline-block;
-    background:#2563EB;
-    color:#fff;
-    text-decoration:none;
-    padding:12px 24px;
-    border-radius:10px;
-    font-weight:bold;
+    background:#2563eb;
+    color:white;
 }
 
 footer{
-    background:#0f172a;
-    color:#fff;
+    background:#1f2940;
+    color:white;
     text-align:center;
     padding:40px 20px;
     margin-top:60px;
 }
 
-/* Mobile */
-
-@media(max-width:768px){
+@media (max-width:768px){
 
 header{
     flex-direction:column;
@@ -165,28 +136,23 @@ header{
 }
 
 .logo{
-    font-size:42px;
+    font-size:40px;
 }
 
 nav{
-    flex-wrap:wrap;
     justify-content:center;
 }
 
-nav a{
-    font-size:20px;
-}
-
 .hero{
-    padding:220px 8% 80px;
+    padding:80px 8%;
 }
 
 .hero h1{
-    font-size:48px;
+    font-size:42px;
 }
 
 .hero p{
-    font-size:20px;
+    font-size:18px;
 }
 
 .hero-btn{
@@ -201,4 +167,3 @@ nav a{
 }
 
 }
-  
